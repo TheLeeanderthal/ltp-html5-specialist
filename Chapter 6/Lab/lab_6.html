@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #6</title>
+        <script>
+        function printMe()
+            {
+                window.print();   
+            }
+        </scri
+        </script>
+        <style>
+            body{
+                width: 1010px;
+            }
+            #last_cronic{
+                padding-top: 21px;
+            }
+            #history{
+                margin-left: 5px;
+
+            }
+            .exp_form{
+                width: 100%;
+                height: 14px;
+
+            }
+            .radio{
+                text-align: center;
+                font-size: 14px;
+            }
+            .if_yes{
+                text-align: left;
+                font-size: 14px;
+            }
+            .question{
+                text-align: right;
+                font-size: 14px;
+            }
+            .allegy{
+                text-align: left;
+                font-size: 14px;
+            }
+            .cronic{
+                text-align: left;
+                font-size: 12px;
+            }
+            .cronic_table{
+                border-right: 1px solid;
+            }
+            td{
+                text-align: left;
+            }
+            fieldset{
+                width: 1000px
+            }
+        </style>
+    </head>
+        
+    <body>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <div id="name_block">
+                <label for="first">First Name:</label>
+                <input type="text" id="first" name="first" required="required" maxlength="25"/>
+            
+                <label for="last">Last Name:</label>
+                <input type="text" id="last" name="last" required="required" maxlength="25" autocomplete="off"/>
+            
+                <label for="middle">Middle Initial:</label>
+                <input type="text" id="middle" name="middle" required="required" maxlength="1" autocomplete="off"/><br/>
+            </div><br/>
+            <div id="dob_block">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" />
+            </div><br/>
+            <p style="border-top: 1px solid; border-bottom: 1px solid; padding-bottom: 10px; padding-top: 10px">Although dental personnel primarily treat the area in and around your mouth, your mouth is a part of your entire body. Health problems that you may have, or medication that you may be taking, could have an important interrelationship with the dentistry you will recieve. Thank you for answering the following questions</p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Medical History</legend>
+                <table>
+                    <tr>
+                        <th width="35%"></th>
+                        <th width="100px"></th>
+                        <th width="125px"></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="question">Are you under a physician's care now?</td>
+                            
+                        <td class="radio"><input type="radio" name="q1" value="yes">Yes
+                        <input type="radio" name="q1" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes">If yes, please explain:</td>
+                        
+                        <td><textarea id="explain1" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Have you ever been hospitalized or had a major operation?</td>
+                            
+                        <td class="radio"><input type="radio" name="q2" value="yes">Yes
+                        <input type="radio" name="q2" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes">If yes, please explain:</td>
+                        
+                        <td><textarea id="explain2" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Have you ever had a serious head or neck injury?</td>
+                            
+                        <td class="radio"><input type="radio" name="q3" value="yes">Yes
+                        <input type="radio" name="q3" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes">If yes, please explain:</td>
+                        
+                        <td><textarea id="explain3" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Are you taking any medications, pills, or drugs?</td>
+                            
+                        <td class="radio"><input type="radio" name="q4" value="yes">Yes
+                        <input type="radio" name="q4" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes">If yes, please explain:</td>
+                        
+                        <td><textarea id="explain4" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Do you take, or have you ever taken, Phen-Fen or Redux</td>
+                            
+                        <td class="radio"><input type="radio" name="q5" value="yes">Yes
+                        <input type="radio" name="q5" value="no">No&nbsp;</td>
+                            
+                        <td colspan="2"><textarea id="explain5" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphonates?</td>
+                            
+                        <td class="radio"><input type="radio" name="q6" value="yes">Yes
+                        <input type="radio" name="q6" value="no">No&nbsp;</td>
+                        
+                        <td colspan="2"><textarea id="explain6" class="exp_form">Type explanation here</textarea></td>    
+                    </tr>
+                    <tr>
+                        <td class="question">Are you on a special diet?</td>
+                            
+                        <td class="radio"><input type="radio" name="q7" value="yes">Yes
+                        <input type="radio" name="q7" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes"></td>
+                        
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="question">Do you use tobacco?</td>
+                            
+                        <td class="radio"><input type="radio" name="q8" value="yes">Yes
+                        <input type="radio" name="q8" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes"></td>
+                        
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="question">Do you use controlles substances?</td>
+                            
+                        <td class="radio"><input type="radio" name="q9" value="yes">Yes
+                        <input type="radio" name="q9" value="no">No&nbsp;</td>
+                            
+                        <td class="if_yes"></td>
+                        
+                        <td></td>    
+                    </tr>
+                </table>  
+        </fieldset>
+        <fieldset>
+            <legend><strong>Women</strong>: Are you</legend>
+                <table width="100%">
+                    <tr>
+                        <th width="18%"></th>
+                        <th width="16%"></th>
+                        <th width="18%"></th>
+                        <th width="16%"></th>
+                        <th width="18%"></th>
+                        <th width="16%"></th>
+                    </tr>
+                    <tr>
+                        <td class="question">Pregnant/Traying to get pregnant?</td>
+                        
+                        <td class="radio"><input type="radio" name="q10" value="yes">Yes
+                        <input type="radio" name="q10" value="no">No</td>
+                        
+                        <td class="question">Taking oral contraceptives?</td>
+                        
+                        <td class="radio"><input type="radio" name="q11" value="yes">Yes
+                        <input type="radio" name="q11" value="no">No</td>
+                        
+                        <td class="question">Nursing?</td>
+                    
+                        <td class="radio"><input type="radio" name="q12" value="yes">Yes
+                        <input type="radio" name="q12" value="no">No&nbsp;</td>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Are you allergic to any of the following?</legend>
+                <table width="100%">
+                    <tr>
+                        <th width="12%"></th>
+                        <th width="15%"></th>
+                        <th width="12%"></th>
+                        <th width="15%"></th>
+                        <th width="11%"></th>
+                        <th width="11%"></th>
+                        <th width="11%"></th>
+                        <th width="11%"></th>
+                    </tr>
+                    <tr>
+                        <td class="allegy"><input type="checkbox" name="aspirin" value="Scandal">Aspirin&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="penicillin" value="Scandal">Penicillin&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="codeine" value="Scandal">Codeine&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="local" value="Scandal">Local Anesthetics&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="acrylic" value="Scandal">Acrylic&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="metal" value="Scandal">Metal&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="latex" value="Scandal">Latex&nbsp&nbsp</td>
+                        
+                        <td class="allegy"><input type="checkbox" name="sulfa" value="Scandal">Sulfa drugs&nbsp&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="allegy"><input type="checkbox" name="allergy_other" value="Scandal">Other&nbsp&nbsp</td>
+                        
+                        <td class="if_yes">If yes, please explain:</td>
+                        
+                        <td colspan="6"><textarea id="explain7" class="exp_form">Type explanation here</textarea></td> 
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Do you have, or have you had, any of the follow?</legend>
+                <table id="history" width="100%">
+                    <tr>
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                        <th width="25%"></th>
+                    </tr>
+                    <tr>
+                        <td class="cronic">
+                            <table class="cronic_table">
+                                <tr>
+                                    <th width="55%"></th>
+                                    <th width="40%"></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        AIDS/HIV Positive
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q13" value="yes">Yes
+                                        <input type="radio" name="q13" value="no">No
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        Alzheimer's Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q14" value="yes">Yes
+                                        <input type="radio" name="q14" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anaphalaxis
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q15" value="yes">Yes
+                                        <input type="radio" name="q15" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Anemia
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q16" value="yes">Yes
+                                        <input type="radio" name="q16" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Angina
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q17" value="yes">Yes
+                                        <input type="radio" name="q17" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Arthritis/Gout
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q18" value="yes">Yes
+                                        <input type="radio" name="q18" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Atificial Heart Valve        
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q19" value="yes">Yes
+                                        <input type="radio" name="q19" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Artificial Joint
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q20" value="yes">Yes
+                                        <input type="radio" name="q20" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Asthma
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q21" value="yes">Yes
+                                        <input type="radio" name="q21" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Blood Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q22" value="yes">Yes
+                                        <input type="radio" name="q22" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Blood Transfusion
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q23" value="yes">Yes
+                                        <input type="radio" name="q23" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Breathing Problem
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q24" value="yes">Yes
+                                        <input type="radio" name="q24" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Bruise Easily
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q25" value="yes">Yes
+                                        <input type="radio" name="q25" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cancer
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q26" value="yes">Yes
+                                        <input type="radio" name="q26" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Chemotherapy
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q27" value="yes">Yes
+                                        <input type="radio" name="q27" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Chest Pains
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q28" value="yes">Yes
+                                        <input type="radio" name="q28" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cold Sores/Fever Blisters
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q29" value="yes">Yes
+                                        <input type="radio" name="q29" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Congenital Heart Disorder&nbsp;
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q30" value="yes">Yes
+                                        <input type="radio" name="q30" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Convulsions
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q31" value="yes">Yes
+                                        <input type="radio" name="q31" value="no">No
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                        <td class="cronic">
+                            <table class="cronic_table">
+                                <tr>
+                                    <th width="55%"></th>
+                                    <th width="40%"></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cortisone Medicine
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q32" value="yes">Yes
+                                        <input type="radio" name="q32" value="no">No
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        Diabetes
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q33" value="yes">Yes
+                                        <input type="radio" name="q33" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Drug Addiction
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q34" value="yes">Yes
+                                        <input type="radio" name="q34" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Easily Winded
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q35" value="yes">Yes
+                                        <input type="radio" name="q35" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Emphysema
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q36" value="yes">Yes
+                                        <input type="radio" name="q36" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Epilepsy or Seizures
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q37" value="yes">Yes
+                                        <input type="radio" name="q37" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Excessive Bleeding
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q38" value="yes">Yes
+                                        <input type="radio" name="q38" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Excessive Thirst
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q39" value="yes">Yes
+                                        <input type="radio" name="q39" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Fainting Spells/Dizziness&nbsp;&nbsp;&nbsp;
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q40" value="yes">Yes
+                                        <input type="radio" name="q40" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Frequent Cough
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q41" value="yes">Yes
+                                        <input type="radio" name="q41" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Frequent Diarrhea
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q42" value="yes">Yes
+                                        <input type="radio" name="q42" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Frequent Headaches
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q43" value="yes">Yes
+                                        <input type="radio" name="q43" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Genital Herpes
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q44" value="yes">Yes
+                                        <input type="radio" name="q44" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Glaucoma
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q45" value="yes">Yes
+                                        <input type="radio" name="q45" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hay Fever
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q46" value="yes">Yes
+                                        <input type="radio" name="q46" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Heart Attack/Failure
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q47" value="yes">Yes
+                                        <input type="radio" name="q47" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Heart Murmer
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q48" value="yes">Yes
+                                        <input type="radio" name="q48" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Heart Pacemaker
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q49" value="yes">Yes
+                                        <input type="radio" name="q49" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Heart Trouble/Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q50" value="yes">Yes
+                                        <input type="radio" name="q50" value="no">No
+                                    </td>
+                                </tr>                     
+                            </table>    
+                        </td>
+                        <td class="cronic">
+                            <table class="cronic_table">
+                                <tr>
+                                    <th width="55%"></th>
+                                    <th width="40%"></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hemophilia
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q51" value="yes">Yes
+                                        <input type="radio" name="q51" value="no">No
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        Hepatitis A
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q52" value="yes">Yes
+                                        <input type="radio" name="q52" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hepatitis B or C
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q53" value="yes">Yes
+                                        <input type="radio" name="q53" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Herpes
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q54" value="yes">Yes
+                                        <input type="radio" name="q54" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        High Blood Pressure&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q55" value="yes">Yes
+                                        <input type="radio" name="q55" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        High Colesterol
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q56" value="yes">Yes
+                                        <input type="radio" name="q56" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hives or Rash
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q57" value="yes">Yes
+                                        <input type="radio" name="q57" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Hypoglycemia
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q58" value="yes">Yes
+                                        <input type="radio" name="q58" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Irregular Heartbeat
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q59" value="yes">Yes
+                                        <input type="radio" name="q59" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Kidney Problems
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q60" value="yes">Yes
+                                        <input type="radio" name="q60" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Leukemia
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q61" value="yes">Yes
+                                        <input type="radio" name="q61" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Liver Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q62" value="yes">Yes
+                                        <input type="radio" name="q62" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Low Blood Pressure
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q63" value="yes">Yes
+                                        <input type="radio" name="q63" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Lung Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q64" value="yes">Yes
+                                        <input type="radio" name="q64" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mitral Valve Prolapse
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q65" value="yes">Yes
+                                        <input type="radio" name="q65" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Osteoporosis
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q66" value="yes">Yes
+                                        <input type="radio" name="q66" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Pain in Jaw Joints
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q67" value="yes">Yes
+                                        <input type="radio" name="q67" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Parathyroid Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q68" value="yes">Yes
+                                        <input type="radio" name="q68" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Psychiatric Care
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q69" value="yes">Yes
+                                        <input type="radio" name="q69" value="no">No
+                                    </td>
+                                </tr>                    
+                            </table>    
+                        </td>
+                        <td class="cronic">
+                            <table id="last_cronic">
+                                <tr>
+                                    <th width="55%"></th>
+                                    <th width="40%"></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Radiation Treatments
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q70" value="yes">Yes
+                                        <input type="radio" name="q70" value="no">No
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        Recent Weight Loss
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q71" value="yes">Yes
+                                        <input type="radio" name="q71" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Renal Dialysis
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q72" value="yes">Yes
+                                        <input type="radio" name="q72" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Rheumatic Fever
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q73" value="yes">Yes
+                                        <input type="radio" name="q73" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Rheumatism
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q74" value="yes">Yes
+                                        <input type="radio" name="q74" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Scarlet Fever
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q75" value="yes">Yes
+                                        <input type="radio" name="q75" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Shingle
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q76" value="yes">Yes
+                                        <input type="radio" name="q76" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sickle Cell Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q77" value="yes">Yes
+                                        <input type="radio" name="q77" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sinus Trouble
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q78" value="yes">Yes
+                                        <input type="radio" name="q78" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Spina Bifuda
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q79" value="yes">Yes
+                                        <input type="radio" name="q79" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Stomach/Intestinal Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q80" value="yes">Yes
+                                        <input type="radio" name="q80" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Stroke
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q81" value="yes">Yes
+                                        <input type="radio" name="q81" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Swelling of Limbs
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q82" value="yes">Yes
+                                        <input type="radio" name="q82" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Thyroid Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q83" value="yes">Yes
+                                        <input type="radio" name="q83" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tonsillitis
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q84" value="yes">Yes
+                                        <input type="radio" name="q84" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tuberculosis
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q85" value="yes">Yes
+                                        <input type="radio" name="q85" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tumors or Growths
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q86" value="yes">Yes
+                                        <input type="radio" name="q86" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ulcers
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q87" value="yes">Yes
+                                        <input type="radio" name="q87" value="no">No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Venereal Disease
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q88" value="yes">Yes
+                                        <input type="radio" name="q88" value="no">No
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <td>
+                                        Yellow Jaundice
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="q89" value="yes">Yes
+                                        <input type="radio" name="q89" value="no">No
+                                    </td>
+                                </tr>
+                            </table>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="question" colspan="2" style="text-align: left; font-size: 14px">Have you ever had any serious illness not listed above?
+                            
+                        <input type="radio" name="q90" value="yes">Yes
+                        <input type="radio" name="q90" value="no">No</td>
+                        
+                        <td colspan="2" style="padding-right: 17px"><textarea id="explain8" class="exp_form">Type explanation here</textarea></td>  
+                    </tr>
+                </table>                    
+        </fieldset>
+        <fieldset>
+            <legend>Comments:</legend>
+                <textarea id="explain9" style="width: 990px; height: 200px; border: 1px solid; margin-left: 3px">Type your comments here</textarea><br/><br/>
+        </fieldset>
+        <fieldset style="margin-bottom: 20px">
+            <legend>Print this form and sign the block below.</legend>
+            <p style="border-top: 1px solid black; border-bottom: 1px solid black; padding-bottom: 5px; padding-top: 5px">To the best of my knowledge, the questionson this form have been accurately answered. I understand that providing incorrect information can be dangerous to my (or patient's) health. It is my responsibility to inform the dental office of any changes in medical status.</p>
+            
+            <p>SIGNATURE OF PATIENT, PARENT, or GUARDIAN________________________________________________ DATE_________________________</p>
+        </fieldset>
+        <button id="btnPrint" onclick="printMe()" >Print Form</button>
+        <button type="reset">Reset</button>
+    </body>
+
+</html>
