@@ -1,0 +1,55 @@
+    
+body{
+    font-family: "Times New Roman", Times, serif !important;
+}
+#paper_title{
+    font-family: "Times New Roman", Times, serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 0px;
+    border-bottom: 3px solid;
+    padding: 0px;
+}
+#paper_subtitle{
+    font-family: "Times New Roman", Times, serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 3px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 0px;
+}
+.article{
+    padding-left: 15px;
+    border-bottom: 1px solid;
+}
+.article img{
+    width: 200px;
+    margin-right: 10px;
+    border: 2px solid
+    
+}
+.article_header{
+    font-family: "Times New Roman", Times, serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 3px;
+    padding: 0px;  
+}
+.article_subHeader{
+    font-family: "Times New Roman", Times, serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 3px;
+    padding: 0px;  
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+        
